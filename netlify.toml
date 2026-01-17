@@ -1,6 +1,7 @@
 [build]
   command = "cd frontend && npm install && npm run build"
   publish = "frontend/build"
+  # Updated for MongoDB environment variable fix
 
 [build.environment]
   NODE_VERSION = "18"

@@ -47,7 +47,7 @@ const LeadForm = () => {
     setStatus({ loading: true, message: '', type: '' });
 
     try {
-      const response = await axios.post(`${API_URL}/api/leads`, formData);
+      const response = await axios.post(`${API_URL}/leads`, formData);
       
       setStatus({
         loading: false,

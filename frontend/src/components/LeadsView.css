@@ -1,0 +1,129 @@
+.leads-view-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.leads-view-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.leads-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.leads-header h2 {
+  color: #333;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.refresh-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #f5c6cb;
+}
+
+.no-leads {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.no-leads p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.leads-count {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 10px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.leads-table-container {
+  overflow-x: auto;
+}
+
+.leads-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.leads-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.leads-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.leads-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.leads-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.leads-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .leads-view-card {
+    padding: 1.5rem;
+  }
+
+  .leads-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .leads-table {
+    font-size: 0.9rem;
+  }
+
+  .leads-table th,
+  .leads-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
